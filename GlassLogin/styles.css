@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(israel-palacio-Y20JJ_ddy9M-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    background: rgba(64, 64, 64, .15);
+    backdrop-filter: blur(25px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
+}
+.container h1{
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    position: relative;
+}
+
+.container h1::after{
+    content: "";
+    width: 50px;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+form{
+    margin-top: 50px;
+    padding: 35px;
+}
+form .formCOntrol{
+    margin-top: 35px;
+    position: relative;
+}
+form .formCOntrol input{
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 100%;
+    padding-left: 50px;
+    color: #fff;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+input::placeholder{
+    color: rgba(255, 255, 255, .8);
+}
+.formCOntrol input:focus{
+    outline: 3px solid rgba(255, 255, 255, .3);
+}
+.checkForgot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.checkForgot .check{
+    display: flex;
+}
+.checkForgot .check input{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.check p{
+    font-size: 18px;
+}
+.checkForgot a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+.checkForgot a:hover{
+    text-decoration: underline;
+}
+.btn button{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+    background: #21a4f1;
+    color: #fff;
+}
+.registerLink{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.registerLink a{
+    color: #fff;
+}
